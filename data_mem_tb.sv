@@ -34,13 +34,15 @@ end
 
 initial begin
 
-reset_n = 0; mem_write = 1; addr = 'h00000004; wdata = 'hFF00FF00; func3 = 'b10; #10;
-reset_n = 1; mem_write = 1; addr = 'h00000008; wdata = 'hFFFFFFFF; func3 = 'b10; #10;
-reset_n = 1; mem_write = 1; addr = 'h0000000c; wdata = 'hAAAAAAAA; func3 = 'b10; #10;
-reset_n = 1; mem_write = 1; addr = 'h00000010; wdata = 'hBBBBBBBB; func3 = 'b10; #10;
+reset_n = 0; mem_write = 1; addr = 'h00000004; wdata = 'hFF00FF00; func3 = 'b010; #10;
 
-reset_n = 1; mem_write = 1; addr = 'h00000014; wdata = 'hABCDEDEF; func3 = 'b00; #10;
-reset_n = 1; mem_write = 1; addr = 'h00000018; wdata = 'hABCDEDEF; func3 = 'b01; #10;
+
+reset_n = 1; mem_write = 1; addr = 'h00000008; wdata = 'hFFFFFFFF; func3 = 'b010; #10;
+reset_n = 1; mem_write = 1; addr = 'h0000000c; wdata = 'hAAAAAAAA; func3 = 'b010; #10;
+reset_n = 1; mem_write = 1; addr = 'h00000010; wdata = 'hBBBBBBBB; func3 = 'b010; #10;
+
+reset_n = 1; mem_write = 1; addr = 'h00000014; wdata = 'hABCDEDEF; func3 = 'b100; #10;
+reset_n = 1; mem_write = 1; addr = 'h00000018; wdata = 'hABCDEDEF; func3 = 'b001; #10;
 
 
 
