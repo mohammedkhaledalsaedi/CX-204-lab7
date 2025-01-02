@@ -44,7 +44,8 @@ reset_n = 1; mem_write = 1; addr = 'h00000010; wdata = 'hBBBBBBBB; func3 = 'b010
 reset_n = 1; mem_write = 1; addr = 'h00000014; wdata = 'hABCDEDEF; func3 = 'b100; #10;
 reset_n = 1; mem_write = 1; addr = 'h00000018; wdata = 'hABCDEDEF; func3 = 'b001; #10;
 
-
+reset_n = 1; mem_write = 0; addr = 'h00000014; wdata = 'hFFFFFFFF; func3 = 'b100; #10;
+reset_n = 1; mem_write = 0; addr = 'h00000014; wdata = 'hFFFFFFFF; func3 = 'b000; #10;
 
 
 $finish;
